@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Akshay Vitthal Shinde">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../BrushUp_jQuery/jquery-3.5.1.min.js"></script>
+   
+    <script src="https://kit.fontawesome.com/7c57659096.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>IntroAkshay</title>
+    <style>
+        html{
+          scroll-behavior: smooth;
+        }
+        body{
+            background-color: gary;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        .back-to-top{
+          position: fixed;
+          width: 30px;
+          height: 30px;
+          bottom: 40px;
+          right: 50px;
+
+          text-decoration: none;
+          text-align: center;
+          line-height: 50px;
+          color: darkslategrey;
+          font-size: 40px;
+        }
+        .ani{
+          width: 40px; height: 40px;
+          transition-property: transform;
+          transition-duration: 2s;
+          transition-timing-function: linear;
+        }
+        .ani:hover{
+          transform: scale(1.5,1.5);
+        }
+        .card{
+          transition: transform 1s linear;
+        }
+        .card:hover{
+          transform: scale(1.1,1.1);
+          box-shadow: 10px 10px 10px 10px gray;
+        }
+        @font-face {
+            font-family: china;
+            src: url('gang_of_three/go3v2.ttf');
+        }
+        .navbar-brand{
+          font-family: china;
+        }
+        .scrollstyle{
+          width: 100%;
+          height: 100vh;
+         }
+         #loading{
+          width: 100%;
+          height: 100vh;
+          background:  #0e0d0d url(images/preloader4.gif) no-repeat center;
+          z-index: 99999;
+          position: fixed;
+         }
+    </style>
+</head>
+<body oncontextmenu="return false", oncopy="return false" onpaste="return false" onload="myfun()">
+  <div id="loading"></div>
+  <header>
+    <!-- navbar begining -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white fixed-top nav nav-justified">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="" alt=""><b>AkshayShinde</b></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarid">
+                <ul class="navbar-nav text-center ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#aboutId" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#socialID" class="nav-link">Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactUs" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+    <!-- end of nav bar -->
+    <!-- begining of carousel -->
+    <div class="container scrollstyle">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/akshay1.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Village</h3>
+              <p>We had such a great time in my Village</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/dark_car.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Favourite CAR</h3>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/Aston_martin.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Dream CAR</h3>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+  </header>
+      <!-- end od carousel -->
+      <!-- about section begining -->
+      <section>
+          <div class="container scrollstyle" id="aboutId"> <br><br><br>
+            <h1 class="text-center" id="about">About</h1>
+              <div class="row">
+                  <div class="col-lg-6 col col-sm-12 mb-5 mt-5">
+                      <h4 class="text-center">About MySelf</h4>
+                      <p>I'm a Freshman just graduate MCA from ASM's Institute of Management & Computer Studies, THANE(WEST).
+                         I am always ready to have new experiences, meet new people and learn new things.
+                         I find the idea of creating value for people and impacting the world through my work gratifying.
+                    </p>
+                    <p>I wish to learn more and more technologies to pursue dynamic and responsible
+                       career and to earn progress by working hard and delivering my best. </p>
+                  </div>
+                  <div class="col-lg-6 col col-sm-12 mb-5 mt-5">
+                    <h4 class="text-center mb-5">My Skills</h4>
+                    <ul>
+                        <i class="fab fa-html5 fa-7x"></i>
+                        <i class="fab fa-css3-alt fa-7x"></i>
+                        <i class="fab fa-js-square fa-7x"></i>
+                        <i class="fab fa-bootstrap fa-7x"></i>
+                        <i class="fab fa-java fa-7x"></i>
+                    </ul>
+                </div>
+              </div>
+          </div>
+      </section>
+      <!-- begining of contact section-->
+      <section>
+      <div class="container scrollstyle" id="socialID"><br><br>
+          <h1 class="text-center mt-5 ">Social Account <img src="images/love-png.png" alt="love" class="ani">   </h1>
+          <div class="row text-center">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card" style="width: 300px;">
+                    <img src="images/passport_photo.jpg" class="card-img" height="250px">
+                    <div class="card-body">
+                        <h4 class="card-title">Akshay Shinde</h4>
+                        <p class="card-text">Looking for job opportunity in web development ..</p>
+                        <a href="https://www.linkedin.com/in/akshay-shinde-8a6061184/" target="_blank" class="btn btn-primary m-auto d-block">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card" style="width: 300px;">
+                    <img src="images/intagram.jpg" class="card-img" height="250px">
+                    <div class="card-body">
+                        <h4 class="card-title">Akshay Shinde</h4>
+                        <p class="card-text"> Food, Travel Music. Always follow my favourite celebrity and friends.. </p>
+                        <a href="https://www.instagram.com/akshayvs1794/" target="_blank" class="btn btn-danger m-auto d-block">Instagram</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card" style="width: 300px;">
+                    <img src="images/wa1.jpg" class="card-img" height="250px">
+                    <div class="card-body">
+                        <h4 class="card-title">Akshay Shinde</h4>
+                        <p class="card-text">I'm here to build something for long-term.else is distraction.</p>
+                        <a href="https://www.facebook.com/Akshayvsss/" target="_blank" class="btn btn-info m-auto d-block">Facebook</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section><br>
+      <!-- ending of cards -->
+      <!-- contactUs begining -->
+    <section>
+      <div class="container scrollstyle pt-2 pb-3" id="contactUs"><br>
+        <form action="post" onsubmit="popUp()" style="box-shadow: 0px 0px 15px darkslategray;">
+          <h2 class="text-center pt-5 pb-3">Contact Me</h2>
+          
+          <div class="form-group">
+            <label for="name">Name </label>
+            <input type="text" class="form-control" placeholder="Enter name" name="uname" id="name" class="form-control" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" placeholder="Enter EmailId" class="form-control" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number </label>
+            <input type="number" min="9" name="mobile" id="Mobile" placeholder="Enter Mobile Number" class="form-control" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="msg">Message </label>
+            <textarea class="form-control" placeholder="Enter details in short" name="Massage" id="msg" required></textarea>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div><br>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit" name="submit">Send</button>
+            <script>
+
+              // Disable form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Get the forms we want to add validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              function popUp(){
+                swal({
+                      title: "Good job!",
+                      text: "Thank you, We will contact you soon...",
+                      icon: "success",
+                      button: "Thanks!",
+                });
+              }
+            </script>
+          </div><br>
+        </form>
+      </div>
+    </section>
+      <!-- end of contactUs -->
+      <footer class="bg-dark text-center text-light pb-5 pt-5">
+        <div class="container-fluid pb-5 pt-5">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+              <ul class="list-unstyled">
+                <li><h4>Menu</h4></li>
+                <li><a href="#socialID">Service</a></li>
+                <li><a href="#socialID">contact</a></li>
+                <li><a href="#aboutId">About</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <h3><b>Akshay Shinde</b></h3>
+              <p>Aim to make this website is make only for seeing the visibility on internet.
+                This is the introduction website..
+              </p>
+            </div>
+          </div>                                    
+        </div>
+        <p class="copyright">&copy All rights reserved Akshay Shinde 2020.</p>
+      </footer>
+      <a href="#" class="back-to-top" style="display: inline;">
+        <i class="fas fa-chevron-circle-up"></i>
+      </a>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous"></script>
+      <script>
+        $(function() {
+          $.scrollify({
+            section : ".scrollstyle",
+          });
+        });
+      </script>
+      <script>
+        var preloader=document.getElementById('loading');
+       
+        function myfun()
+        {
+          preloader.style.display='none';
+        }
+      </script>
+      <script src="assets/js/main.js"></script>
+</body>
+</html>
